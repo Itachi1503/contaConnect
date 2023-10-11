@@ -1,0 +1,88 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(297deg, #7C81AD 1.04%, #7C81AD 50.52%, rgba(255, 255, 255, 0.00) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    border-radius: 21px;
+    background: #7C81AD;
+    box-shadow: 13px 12px 36px 1px rgba(0, 0, 0, 0.25);
+    max-width: 350px;
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:  20px 20px 40px 20px;
+}
+
+.phone-img {
+    width: 150px;
+}
+
+.name {
+   text-align: center;
+   color: white;
+   margin-bottom: 10px;
+   margin-top: -10px;
+}
+
+.logo-heading {
+    margin-bottom: 8px;
+}
+
+.tagline {
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.btn {
+    border-radius: 10px;
+    background: #E5C3A6;
+    border: none;
+    padding: 12px 50px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #4B527E;
+}
+
+
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #4B527E;
+    color: white;
+}
+
+@media (max-width: 350px) {
+    .phone-img {
+        width: 100px;
+    }
+
+    .logo-heading {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 0.9rem;
+    }
+}

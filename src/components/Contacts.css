@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    background: linear-gradient(63deg, #7277A6 0%, #9094B8 100%);
+    width: 100%;
+    height: auto;
+    min-height: 100vh; 
+    font-family: 'Inter', sans-serif;
+    padding: 10px;   
+}
+
+.heading {
+    text-align: center;
+    padding: 50px 0;
+    color: #E5C3A6;
+    margin-top: 40px;
+}
+
+.contact-input {
+    margin: 0 auto 50px auto;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.user {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color:#4B527E; 
+    font-weight: bold;   
+}
+
+.add-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color:#696969; 
+    font-weight: bold;
+    cursor: pointer; 
+    
+}
+
+.cancle {
+    margin-left: 10px;
+}
+
+.add-btn:hover {
+    color:#4B527E; 
+}
+
+.contact-list {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
+    color:#4B527E;
+}
+
+
+.user-info {
+  display: flex;
+  gap: 20px;
+}
+
+.list {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color:#4B527E; 
+    font-weight: bold;  
+}
+
+.user-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.ed-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ed-btn:hover {
+    transform: scale(0.9);
+}
+
+.no-result {
+    text-align: center;
+    margin: 20px auto;
+    color: #D9D9D9;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media screen  and (max-width: 800px) {
+    .heading {
+        margin-top: 90px;
+    }
+}
+
+
+@media screen  and (max-width: 660px) {
+    .inputs, .user-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .contact-input, .contact-list {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+   
+  
+}
+
