@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 import './App.css';
 import Home from './components/Home';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Contacts from './components/Contacts';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         
         <Route exact path="/homepage"  element={<Home/>} />
         <Route exact path="/contacts" element={<Contacts searchTerm={searchTerm}  onSearchChange={updateSearchTerm} />} />
-        <Route path="*" element={<Navigate to="/homepage" replace />} />
+        
       </Routes>
       </Router>
       

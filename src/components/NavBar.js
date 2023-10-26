@@ -2,11 +2,18 @@ import React from 'react'
 import './NavBar.css'
 import Logo from './Logo.png'
 import Search from './search.png'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
 
 export default function NavBar(props) {
+ const navigate = useNavigate();
+
  const handleSearchChange = (e)=> {
    props.onSearchChange(e.target.value);
+ }
+
+ const handleNavigation = ()=> {
+  navigate("/homepage");
  }
 
   return (
@@ -16,7 +23,7 @@ export default function NavBar(props) {
            
             <div className="logo">
                 <img src={Logo} alt="logo"  width={40}/>
-                <Link to="/homepage" className='logo-name'>ContaConnect...</Link>
+                <button onClick={handleNavigation} className='logo-name'>ContaConnect...</button>
             </div>
            
              <div className='search-container'>
